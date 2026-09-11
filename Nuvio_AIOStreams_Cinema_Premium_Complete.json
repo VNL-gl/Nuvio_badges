@@ -1,0 +1,324 @@
+{
+  "groups": [
+    {
+      "id": "resolution",
+      "name": "Resolution",
+      "color": "#00000000",
+      "borderColor": "#FFFFD54F",
+      "isExpanded": true
+    },
+    {
+      "id": "source",
+      "name": "Source",
+      "color": "#00000000",
+      "borderColor": "#FF5C6BC0",
+      "isExpanded": true
+    },
+    {
+      "id": "visual_dv",
+      "name": "Dolby Vision",
+      "color": "#00000000",
+      "borderColor": "#FFFFD54F",
+      "isExpanded": true
+    },
+    {
+      "id": "visual_hdr10plus",
+      "name": "HDR10+",
+      "color": "#00000000",
+      "borderColor": "#FFFFD54F",
+      "isExpanded": true
+    },
+    {
+      "id": "visual_hdr10",
+      "name": "HDR10",
+      "color": "#00000000",
+      "borderColor": "#FFFFD54F",
+      "isExpanded": true
+    },
+    {
+      "id": "visual_hdr",
+      "name": "HDR",
+      "color": "#00000000",
+      "borderColor": "#FFFFD54F",
+      "isExpanded": true
+    },
+    {
+      "id": "video_codec",
+      "name": "Video Codec",
+      "color": "#00000000",
+      "borderColor": "#FF88FF80",
+      "isExpanded": true
+    },
+    {
+      "id": "audio_atmos",
+      "name": "Dolby Atmos",
+      "color": "#00000000",
+      "borderColor": "#FFD400FF",
+      "isExpanded": true
+    },
+    {
+      "id": "audio_dolby",
+      "name": "Dolby Audio",
+      "color": "#00000000",
+      "borderColor": "#FFD400FF",
+      "isExpanded": true
+    },
+    {
+      "id": "audio_dts",
+      "name": "DTS Audio",
+      "color": "#00000000",
+      "borderColor": "#FFD400FF",
+      "isExpanded": true
+    },
+    {
+      "id": "channels",
+      "name": "Audio Channels",
+      "color": "#00000000",
+      "borderColor": "#FF9EB045",
+      "isExpanded": true
+    },
+    {
+      "id": "bit_depth",
+      "name": "Bit Depth",
+      "color": "#00000000",
+      "borderColor": "#FFFF130F",
+      "isExpanded": true
+    }
+  ],
+  "filters": [
+    {
+      "id": "res-2160p",
+      "groupId": "resolution",
+      "name": "4K",
+      "pattern": "(?i)\\b(?:2160p?|4k|uhd|ultra[\\s._-]?hd)\\b",
+      "imageURL": "https://raw.githubusercontent.com/leonevz/Elite-Badges/main/Badges/4k_ultra_hd.png",
+      "tagColor": "#00000000",
+      "borderColor": "#FFFF9728"
+    },
+    {
+      "id": "res-1080p",
+      "groupId": "resolution",
+      "name": "1080p",
+      "pattern": "(?i)\\b(?:1080p?|fhd|full[\\s._-]?hd)\\b",
+      "imageURL": "https://raw.githubusercontent.com/leonevz/Elite-Badges/main/Badges/1080p_full_hd.png",
+      "tagColor": "#00000000",
+      "borderColor": "#FFFF9728"
+    },
+    {
+      "id": "res-720p",
+      "groupId": "resolution",
+      "name": "720p",
+      "pattern": "(?i)\\b720p?\\b",
+      "imageURL": "https://raw.githubusercontent.com/leonevz/Elite-Badges/main/Badges/720p_hd.png",
+      "tagColor": "#00000000",
+      "borderColor": "#FFFF9728"
+    },
+    {
+      "id": "res-480p",
+      "groupId": "resolution",
+      "name": "480p",
+      "pattern": "(?i)\\b480p?\\b",
+      "imageURL": "https://raw.githubusercontent.com/leonevz/Elite-Badges/main/Badges/480p_sd.png",
+      "tagColor": "#00000000",
+      "borderColor": "#FFFF9728"
+    },
+    {
+      "id": "src-remux",
+      "groupId": "source",
+      "name": "REMUX",
+      "pattern": "(?i)\\b(?:bluray[\\s._-]?)?remux\\b",
+      "imageURL": "https://raw.githubusercontent.com/leonevz/Elite-Badges/main/Badges/remux.png",
+      "tagColor": "#00000000",
+      "borderColor": "#FF10808E"
+    },
+    {
+      "id": "src-bluray",
+      "groupId": "source",
+      "name": "Blu-ray",
+      "pattern": "(?i)\\b(?:blu[\\s._-]?ray|bluray|bdrip|bdremux)\\b",
+      "imageURL": "https://raw.githubusercontent.com/leonevz/Elite-Badges/main/Badges/blu_ray_disc.png",
+      "tagColor": "#00000000",
+      "borderColor": "#FF5C6BC0"
+    },
+    {
+      "id": "src-webdl",
+      "groupId": "source",
+      "name": "WEB-DL",
+      "pattern": "(?i)\\b(?:web[\\s._-]?dl|webdl)\\b",
+      "imageURL": "https://raw.githubusercontent.com/leonevz/Elite-Badges/main/Badges/WEBDL_transparent_4x.png",
+      "tagColor": "#00000000",
+      "borderColor": "#FF5C6BC0"
+    },
+    {
+      "id": "src-webrip",
+      "groupId": "source",
+      "name": "WEBRip",
+      "pattern": "(?i)\\b(?:web[\\s._-]?rip|webrip)\\b",
+      "imageURL": "https://raw.githubusercontent.com/leonevz/Elite-Badges/main/Badges/WEBRip_transparent_4x.png",
+      "tagColor": "#00000000",
+      "borderColor": "#FF5C6BC0"
+    },
+    {
+      "id": "dv",
+      "groupId": "visual_dv",
+      "name": "Dolby Vision",
+      "pattern": "(?i)\\b(?:dolby[\\s._-]?vision|dovi|dv)\\b",
+      "imageURL": "https://raw.githubusercontent.com/leonevz/Elite-Badges/main/Badges/dolby_vision.png",
+      "tagColor": "#00000000",
+      "borderColor": "#FFFFD54F"
+    },
+    {
+      "id": "hdr10plus",
+      "groupId": "visual_hdr10plus",
+      "name": "HDR10+",
+      "pattern": "(?i)\\b(?:hdr[\\s._-]?10[\\s._-]?(?:\\+|plus)|hdr10plus)\\b",
+      "imageURL": "https://raw.githubusercontent.com/leonevz/Elite-Badges/main/Badges/hdr10_plus.png",
+      "tagColor": "#00000000",
+      "borderColor": "#FFFFD54F"
+    },
+    {
+      "id": "hdr10",
+      "groupId": "visual_hdr10",
+      "name": "HDR10",
+      "pattern": "(?i)\\bhdr[\\s._-]?10\\b(?![\\s._-]?(?:\\+|plus))",
+      "imageURL": "https://raw.githubusercontent.com/leonevz/Elite-Badges/main/Badges/hdr10.png",
+      "tagColor": "#00000000",
+      "borderColor": "#FFFFD54F"
+    },
+    {
+      "id": "hdr",
+      "groupId": "visual_hdr",
+      "name": "HDR",
+      "pattern": "(?i)\\bhdr\\b(?![\\s._-]?10)",
+      "imageURL": "https://raw.githubusercontent.com/leonevz/Elite-Badges/main/Badges/hdr.png",
+      "tagColor": "#00000000",
+      "borderColor": "#FFFFD54F"
+    },
+    {
+      "id": "codec-hevc",
+      "groupId": "video_codec",
+      "name": "HEVC",
+      "pattern": "(?i)\\b(?:hevc|h[\\s._-]?265|x265)\\b",
+      "imageURL": "https://raw.githubusercontent.com/leonevz/Elite-Badges/main/Badges/HEVC_transparent_4x.png",
+      "tagColor": "#00000000",
+      "borderColor": "#FF88FF80"
+    },
+    {
+      "id": "codec-avc",
+      "groupId": "video_codec",
+      "name": "AVC",
+      "pattern": "(?i)\\b(?:avc|h[\\s._-]?264|x264)\\b",
+      "imageURL": "https://raw.githubusercontent.com/leonevz/Elite-Badges/main/Badges/AVC_transparent_4x.png",
+      "tagColor": "#00000000",
+      "borderColor": "#FF88FF80"
+    },
+    {
+      "id": "audio-atmos",
+      "groupId": "audio_atmos",
+      "name": "Dolby Atmos",
+      "pattern": "(?i)\\b(?:dolby[\\s._-]?atmos|atmos)\\b",
+      "imageURL": "https://raw.githubusercontent.com/leonevz/Elite-Badges/main/Badges/dolby_atmos.png",
+      "tagColor": "#00000000",
+      "borderColor": "#FFD400FF"
+    },
+    {
+      "id": "audio-truehd",
+      "groupId": "audio_dolby",
+      "name": "Dolby TrueHD",
+      "pattern": "(?i)\\b(?:truehd|true[\\s._-]?hd|dolby[\\s._-]?truehd)\\b",
+      "imageURL": "https://raw.githubusercontent.com/leonevz/Elite-Badges/main/Badges/truehd.png",
+      "tagColor": "#00000000",
+      "borderColor": "#FFD400FF"
+    },
+    {
+      "id": "audio-ddplus",
+      "groupId": "audio_dolby",
+      "name": "Dolby Digital Plus",
+      "pattern": "(?i)\\b(?:ddp[\\s._-]*[0-9]?[\\s._-]*[0-9]?|dd\\+|dolby[\\s._-]?digital[\\s._-]?plus|e-?ac-?3)\\b",
+      "imageURL": "https://raw.githubusercontent.com/leonevz/Elite-Badges/main/Badges/dolby_digital_plus.png",
+      "tagColor": "#00000000",
+      "borderColor": "#FFD400FF"
+    },
+    {
+      "id": "audio-dd",
+      "groupId": "audio_dolby",
+      "name": "Dolby Digital",
+      "pattern": "(?i)\\b(?:dd[\\s._-]*[0-9]?[\\s._-]*[0-9]?|dd|dolby[\\s._-]?digital|ac-?3)\\b(?![\\s._-]*(?:plus|\\+))",
+      "imageURL": "https://raw.githubusercontent.com/leonevz/Elite-Badges/main/Badges/dolby_digital.png",
+      "tagColor": "#00000000",
+      "borderColor": "#FFD400FF"
+    },
+    {
+      "id": "audio-dtsx",
+      "groupId": "audio_dts",
+      "name": "DTS:X",
+      "pattern": "(?i)\\bdts[\\s._:-]*x\\b",
+      "imageURL": "https://raw.githubusercontent.com/leonevz/Elite-Badges/main/Badges/dts_x.png",
+      "tagColor": "#00000000",
+      "borderColor": "#FFD400FF"
+    },
+    {
+      "id": "audio-dtsma",
+      "groupId": "audio_dts",
+      "name": "DTS-HD Master Audio",
+      "pattern": "(?i)\\bdts[\\s._-]*(?:hd[\\s._-]*)?(?:ma|master[\\s._-]?audio)\\b",
+      "imageURL": "https://raw.githubusercontent.com/leonevz/Elite-Badges/main/Badges/dts_hd_master_audio.png",
+      "tagColor": "#00000000",
+      "borderColor": "#FFD400FF"
+    },
+    {
+      "id": "audio-dtshd",
+      "groupId": "audio_dts",
+      "name": "DTS-HD",
+      "pattern": "(?i)\\bdts[\\s._-]*hd\\b(?![\\s._-]*(?:ma|master))",
+      "imageURL": "https://raw.githubusercontent.com/leonevz/Elite-Badges/main/Badges/dts_hd.png",
+      "tagColor": "#00000000",
+      "borderColor": "#FFD400FF"
+    },
+    {
+      "id": "audio-dts",
+      "groupId": "audio_dts",
+      "name": "DTS",
+      "pattern": "(?i)\\bdts\\b(?![\\s._:-]*(?:x|hd))",
+      "imageURL": "https://raw.githubusercontent.com/leonevz/Elite-Badges/main/Badges/dts.png",
+      "tagColor": "#00000000",
+      "borderColor": "#FFD400FF"
+    },
+    {
+      "id": "ch-71",
+      "groupId": "channels",
+      "name": "7.1",
+      "pattern": "(?i)\\b(?:7\\.1|7-1|8ch|8[\\s._-]?channel)\\b",
+      "imageURL": "https://raw.githubusercontent.com/leonevz/Elite-Badges/main/Badges/7_1_audio.png",
+      "tagColor": "#00000000",
+      "borderColor": "#FF9EB045"
+    },
+    {
+      "id": "ch-51",
+      "groupId": "channels",
+      "name": "5.1",
+      "pattern": "(?i)\\b(?:5\\.1|5-1|6ch|6[\\s._-]?channel)\\b",
+      "imageURL": "https://raw.githubusercontent.com/leonevz/Elite-Badges/main/Badges/5_1_audio.png",
+      "tagColor": "#00000000",
+      "borderColor": "#FF9EB045"
+    },
+    {
+      "id": "depth-10",
+      "groupId": "bit_depth",
+      "name": "10-bit",
+      "pattern": "(?i)\\b(?:10[\\s._-]?bit|10b|hi10p)\\b",
+      "imageURL": "https://raw.githubusercontent.com/leonevz/Elite-Badges/main/Badges/10Bit_transparent_4x.png",
+      "tagColor": "#00000000",
+      "borderColor": "#FFFF130F"
+    },
+    {
+      "id": "depth-8",
+      "groupId": "bit_depth",
+      "name": "8-bit",
+      "pattern": "(?i)\\b(?:8[\\s._-]?bit|8b)\\b",
+      "imageURL": "https://raw.githubusercontent.com/leonevz/Elite-Badges/main/Badges/8Bit_transparent_4x.png",
+      "tagColor": "#00000000",
+      "borderColor": "#FFFF130F"
+    }
+  ]
+}
