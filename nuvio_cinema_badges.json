@@ -1,0 +1,576 @@
+{
+  "name": "Nuvio Cinema Glass — Full Media Info",
+  "version": "1.0.0",
+  "description": "Original compact cinematic badge pack for Nuvio. Covers video, HDR, source, codec, bit depth, audio, channels, edition, FPS, bitrate, size and containers.",
+  "badgeStyle": {
+    "name": "Cinema Glass",
+    "shape": "rounded-capsule",
+    "layout": "label-first",
+    "note": "SVG assets are custom text-based artwork; host them beside this JSON on GitHub."
+  },
+  "groupPriority": [
+    "resolution",
+    "source",
+    "hdr",
+    "video",
+    "color",
+    "audio",
+    "channels",
+    "edition",
+    "frame",
+    "technical",
+    "size",
+    "special"
+  ],
+  "filters": [
+    {
+      "id": "cinema_8k",
+      "groupId": "resolution",
+      "name": "8K",
+      "pattern": "(?i)(?<![A-Z0-9])(?:8K|4320p)(?![A-Z0-9])",
+      "imageURL": "https://raw.githubusercontent.com/YOUR_GITHUB_USER/YOUR_REPO/main/assets/resolution_8k.svg",
+      "tagColor": "00000000",
+      "borderColor": "4AA3FF"
+    },
+    {
+      "id": "cinema_4k",
+      "groupId": "resolution",
+      "name": "4K",
+      "pattern": "(?i)(?<![A-Z0-9])(?:4K|2160p|UHD)(?![A-Z0-9])",
+      "imageURL": "https://raw.githubusercontent.com/YOUR_GITHUB_USER/YOUR_REPO/main/assets/resolution_4k.svg",
+      "tagColor": "00000000",
+      "borderColor": "4AA3FF"
+    },
+    {
+      "id": "cinema_2k",
+      "groupId": "resolution",
+      "name": "2K",
+      "pattern": "(?i)(?<![A-Z0-9])(?:2K|1440p)(?![A-Z0-9])",
+      "imageURL": "https://raw.githubusercontent.com/YOUR_GITHUB_USER/YOUR_REPO/main/assets/resolution_2k.svg",
+      "tagColor": "00000000",
+      "borderColor": "4AA3FF"
+    },
+    {
+      "id": "cinema_1080p",
+      "groupId": "resolution",
+      "name": "1080p",
+      "pattern": "(?i)(?<![A-Z0-9])1080(?:p|i)?(?![A-Z0-9])",
+      "imageURL": "https://raw.githubusercontent.com/YOUR_GITHUB_USER/YOUR_REPO/main/assets/resolution_1080p.svg",
+      "tagColor": "00000000",
+      "borderColor": "4AA3FF"
+    },
+    {
+      "id": "cinema_720p",
+      "groupId": "resolution",
+      "name": "720p",
+      "pattern": "(?i)(?<![A-Z0-9])720p(?![A-Z0-9])",
+      "imageURL": "https://raw.githubusercontent.com/YOUR_GITHUB_USER/YOUR_REPO/main/assets/resolution_720p.svg",
+      "tagColor": "00000000",
+      "borderColor": "4AA3FF"
+    },
+    {
+      "id": "cinema_576p",
+      "groupId": "resolution",
+      "name": "576p",
+      "pattern": "(?i)(?<![A-Z0-9])576p(?![A-Z0-9])",
+      "imageURL": "https://raw.githubusercontent.com/YOUR_GITHUB_USER/YOUR_REPO/main/assets/resolution_576p.svg",
+      "tagColor": "00000000",
+      "borderColor": "4AA3FF"
+    },
+    {
+      "id": "cinema_480p",
+      "groupId": "resolution",
+      "name": "480p",
+      "pattern": "(?i)(?<![A-Z0-9])480p(?![A-Z0-9])",
+      "imageURL": "https://raw.githubusercontent.com/YOUR_GITHUB_USER/YOUR_REPO/main/assets/resolution_480p.svg",
+      "tagColor": "00000000",
+      "borderColor": "4AA3FF"
+    },
+    {
+      "id": "cinema_remux",
+      "groupId": "source",
+      "name": "REMUX",
+      "pattern": "(?i)(?<![A-Z0-9])(?:REMUX|BDREMUX)(?![A-Z0-9])",
+      "imageURL": "https://raw.githubusercontent.com/YOUR_GITHUB_USER/YOUR_REPO/main/assets/source_remux.svg",
+      "tagColor": "00000000",
+      "borderColor": "55D98A"
+    },
+    {
+      "id": "cinema_bluray",
+      "groupId": "source",
+      "name": "BLU-RAY",
+      "pattern": "(?i)(?<![A-Z0-9])(?:BLURAY|BLU-RAY|BDMV)(?![A-Z0-9])",
+      "imageURL": "https://raw.githubusercontent.com/YOUR_GITHUB_USER/YOUR_REPO/main/assets/source_bluray.svg",
+      "tagColor": "00000000",
+      "borderColor": "55D98A"
+    },
+    {
+      "id": "cinema_webdl",
+      "groupId": "source",
+      "name": "WEB-DL",
+      "pattern": "(?i)(?<![A-Z0-9])(?:WEB[- .]?DL|WEBDL)(?![A-Z0-9])",
+      "imageURL": "https://raw.githubusercontent.com/YOUR_GITHUB_USER/YOUR_REPO/main/assets/source_webdl.svg",
+      "tagColor": "00000000",
+      "borderColor": "55D98A"
+    },
+    {
+      "id": "cinema_webrip",
+      "groupId": "source",
+      "name": "WEBRip",
+      "pattern": "(?i)(?<![A-Z0-9])WEB[- .]?RIP(?![A-Z0-9])",
+      "imageURL": "https://raw.githubusercontent.com/YOUR_GITHUB_USER/YOUR_REPO/main/assets/source_webrip.svg",
+      "tagColor": "00000000",
+      "borderColor": "55D98A"
+    },
+    {
+      "id": "cinema_hdtv",
+      "groupId": "source",
+      "name": "HDTV",
+      "pattern": "(?i)(?<![A-Z0-9])HDTV(?![A-Z0-9])",
+      "imageURL": "https://raw.githubusercontent.com/YOUR_GITHUB_USER/YOUR_REPO/main/assets/source_hdtv.svg",
+      "tagColor": "00000000",
+      "borderColor": "55D98A"
+    },
+    {
+      "id": "cinema_bdrip",
+      "groupId": "source",
+      "name": "BDRip",
+      "pattern": "(?i)(?<![A-Z0-9])BD[- .]?RIP(?![A-Z0-9])",
+      "imageURL": "https://raw.githubusercontent.com/YOUR_GITHUB_USER/YOUR_REPO/main/assets/source_bdrip.svg",
+      "tagColor": "00000000",
+      "borderColor": "55D98A"
+    },
+    {
+      "id": "cinema_dvdrip",
+      "groupId": "source",
+      "name": "DVDRip",
+      "pattern": "(?i)(?<![A-Z0-9])DVD[- .]?RIP(?![A-Z0-9])",
+      "imageURL": "https://raw.githubusercontent.com/YOUR_GITHUB_USER/YOUR_REPO/main/assets/source_dvdrip.svg",
+      "tagColor": "00000000",
+      "borderColor": "55D98A"
+    },
+    {
+      "id": "cinema_imax",
+      "groupId": "edition",
+      "name": "IMAX",
+      "pattern": "(?i)(?<![A-Z0-9])IMAX(?![A-Z0-9])",
+      "imageURL": "https://raw.githubusercontent.com/YOUR_GITHUB_USER/YOUR_REPO/main/assets/edition_imax.svg",
+      "tagColor": "00000000",
+      "borderColor": "F59E0B"
+    },
+    {
+      "id": "cinema_extended",
+      "groupId": "edition",
+      "name": "EXTENDED",
+      "pattern": "(?i)(?<![A-Z0-9])EXTENDED(?![A-Z0-9])",
+      "imageURL": "https://raw.githubusercontent.com/YOUR_GITHUB_USER/YOUR_REPO/main/assets/edition_extended.svg",
+      "tagColor": "00000000",
+      "borderColor": "F59E0B"
+    },
+    {
+      "id": "cinema_directorscut",
+      "groupId": "edition",
+      "name": "DIRECTOR'S CUT",
+      "pattern": "(?i)(?<![A-Z0-9])DIRECTOR(?:S|['’]S)[ ._-]?CUT(?![A-Z0-9])",
+      "imageURL": "https://raw.githubusercontent.com/YOUR_GITHUB_USER/YOUR_REPO/main/assets/edition_directorscut.svg",
+      "tagColor": "00000000",
+      "borderColor": "F59E0B"
+    },
+    {
+      "id": "cinema_uncut",
+      "groupId": "edition",
+      "name": "UNCUT",
+      "pattern": "(?i)(?<![A-Z0-9])UNCUT(?![A-Z0-9])",
+      "imageURL": "https://raw.githubusercontent.com/YOUR_GITHUB_USER/YOUR_REPO/main/assets/edition_uncut.svg",
+      "tagColor": "00000000",
+      "borderColor": "F59E0B"
+    },
+    {
+      "id": "cinema_proper",
+      "groupId": "edition",
+      "name": "PROPER",
+      "pattern": "(?i)(?<![A-Z0-9])PROPER(?![A-Z0-9])",
+      "imageURL": "https://raw.githubusercontent.com/YOUR_GITHUB_USER/YOUR_REPO/main/assets/edition_proper.svg",
+      "tagColor": "00000000",
+      "borderColor": "F59E0B"
+    },
+    {
+      "id": "cinema_repack",
+      "groupId": "edition",
+      "name": "REPACK",
+      "pattern": "(?i)(?<![A-Z0-9])REPACK(?![A-Z0-9])",
+      "imageURL": "https://raw.githubusercontent.com/YOUR_GITHUB_USER/YOUR_REPO/main/assets/edition_repack.svg",
+      "tagColor": "00000000",
+      "borderColor": "F59E0B"
+    },
+    {
+      "id": "cinema_dolbyvision",
+      "groupId": "hdr",
+      "name": "DOLBY VISION",
+      "pattern": "(?i)(?<![A-Z0-9])(?:DOLBY[ ._-]?VISION|DV)(?![A-Z0-9])",
+      "imageURL": "https://raw.githubusercontent.com/YOUR_GITHUB_USER/YOUR_REPO/main/assets/hdr_dolbyvision.svg",
+      "tagColor": "00000000",
+      "borderColor": "C77DFF"
+    },
+    {
+      "id": "cinema_hdr10plus",
+      "groupId": "hdr",
+      "name": "HDR10+",
+      "pattern": "(?i)(?<![A-Z0-9])HDR10(?:\\+|PLUS)(?![A-Z0-9])",
+      "imageURL": "https://raw.githubusercontent.com/YOUR_GITHUB_USER/YOUR_REPO/main/assets/hdr_hdr10plus.svg",
+      "tagColor": "00000000",
+      "borderColor": "C77DFF"
+    },
+    {
+      "id": "cinema_hdr10",
+      "groupId": "hdr",
+      "name": "HDR10",
+      "pattern": "(?i)(?<![A-Z0-9])HDR10(?![A-Z0-9+])",
+      "imageURL": "https://raw.githubusercontent.com/YOUR_GITHUB_USER/YOUR_REPO/main/assets/hdr_hdr10.svg",
+      "tagColor": "00000000",
+      "borderColor": "C77DFF"
+    },
+    {
+      "id": "cinema_hlg",
+      "groupId": "hdr",
+      "name": "HLG",
+      "pattern": "(?i)(?<![A-Z0-9])HLG(?![A-Z0-9])",
+      "imageURL": "https://raw.githubusercontent.com/YOUR_GITHUB_USER/YOUR_REPO/main/assets/hdr_hlg.svg",
+      "tagColor": "00000000",
+      "borderColor": "C77DFF"
+    },
+    {
+      "id": "cinema_hdr",
+      "groupId": "hdr",
+      "name": "HDR",
+      "pattern": "(?i)(?<![A-Z0-9])HDR(?!10|\\+|10PLUS|10P)",
+      "imageURL": "https://raw.githubusercontent.com/YOUR_GITHUB_USER/YOUR_REPO/main/assets/hdr_hdr.svg",
+      "tagColor": "00000000",
+      "borderColor": "C77DFF"
+    },
+    {
+      "id": "cinema_sdr",
+      "groupId": "hdr",
+      "name": "SDR",
+      "pattern": "(?i)(?<![A-Z0-9])SDR(?![A-Z0-9])",
+      "imageURL": "https://raw.githubusercontent.com/YOUR_GITHUB_USER/YOUR_REPO/main/assets/hdr_sdr.svg",
+      "tagColor": "00000000",
+      "borderColor": "C77DFF"
+    },
+    {
+      "id": "cinema_av1",
+      "groupId": "video",
+      "name": "AV1",
+      "pattern": "(?i)(?<![A-Z0-9])(?:AV1|AV01)(?![A-Z0-9])",
+      "imageURL": "https://raw.githubusercontent.com/YOUR_GITHUB_USER/YOUR_REPO/main/assets/video_av1.svg",
+      "tagColor": "00000000",
+      "borderColor": "35D6C4"
+    },
+    {
+      "id": "cinema_hevc",
+      "groupId": "video",
+      "name": "HEVC / H.265",
+      "pattern": "(?i)(?<![A-Z0-9])(?:HEVC|H\\.?265|X265)(?![A-Z0-9])",
+      "imageURL": "https://raw.githubusercontent.com/YOUR_GITHUB_USER/YOUR_REPO/main/assets/video_hevc.svg",
+      "tagColor": "00000000",
+      "borderColor": "35D6C4"
+    },
+    {
+      "id": "cinema_avc",
+      "groupId": "video",
+      "name": "AVC / H.264",
+      "pattern": "(?i)(?<![A-Z0-9])(?:AVC|H\\.?264|X264)(?![A-Z0-9])",
+      "imageURL": "https://raw.githubusercontent.com/YOUR_GITHUB_USER/YOUR_REPO/main/assets/video_avc.svg",
+      "tagColor": "00000000",
+      "borderColor": "35D6C4"
+    },
+    {
+      "id": "cinema_vp9",
+      "groupId": "video",
+      "name": "VP9",
+      "pattern": "(?i)(?<![A-Z0-9])VP9(?![A-Z0-9])",
+      "imageURL": "https://raw.githubusercontent.com/YOUR_GITHUB_USER/YOUR_REPO/main/assets/video_vp9.svg",
+      "tagColor": "00000000",
+      "borderColor": "35D6C4"
+    },
+    {
+      "id": "cinema_10bit",
+      "groupId": "color",
+      "name": "10-bit",
+      "pattern": "(?i)(?<![A-Z0-9])10[- .]?BIT(?![A-Z0-9])",
+      "imageURL": "https://raw.githubusercontent.com/YOUR_GITHUB_USER/YOUR_REPO/main/assets/color_10bit.svg",
+      "tagColor": "00000000",
+      "borderColor": "AEB8C5"
+    },
+    {
+      "id": "cinema_8bit",
+      "groupId": "color",
+      "name": "8-bit",
+      "pattern": "(?i)(?<![A-Z0-9])8[- .]?BIT(?![A-Z0-9])",
+      "imageURL": "https://raw.githubusercontent.com/YOUR_GITHUB_USER/YOUR_REPO/main/assets/color_8bit.svg",
+      "tagColor": "00000000",
+      "borderColor": "AEB8C5"
+    },
+    {
+      "id": "cinema_progressive",
+      "groupId": "video",
+      "name": "PROGRESSIVE",
+      "pattern": "(?i)(?<![A-Z0-9])(?:PROGRESSIVE|1080P24)(?![A-Z0-9])",
+      "imageURL": "https://raw.githubusercontent.com/YOUR_GITHUB_USER/YOUR_REPO/main/assets/video_progressive.svg",
+      "tagColor": "00000000",
+      "borderColor": "35D6C4"
+    },
+    {
+      "id": "cinema_truehdatmos",
+      "groupId": "audio",
+      "name": "TRUEHD + ATMOS",
+      "pattern": "(?i)(?<![A-Z0-9])(?:TRUEHD[ ._-]?ATMOS|ATMOS[ ._-]?TRUEHD)(?![A-Z0-9])",
+      "imageURL": "https://raw.githubusercontent.com/YOUR_GITHUB_USER/YOUR_REPO/main/assets/audio_truehdatmos.svg",
+      "tagColor": "00000000",
+      "borderColor": "FFB84D"
+    },
+    {
+      "id": "cinema_dtsx",
+      "groupId": "audio",
+      "name": "DTS:X",
+      "pattern": "(?i)(?<![A-Z0-9])DTS[ ._-]?X(?![A-Z0-9])",
+      "imageURL": "https://raw.githubusercontent.com/YOUR_GITHUB_USER/YOUR_REPO/main/assets/audio_dtsx.svg",
+      "tagColor": "00000000",
+      "borderColor": "FFB84D"
+    },
+    {
+      "id": "cinema_dtshdma",
+      "groupId": "audio",
+      "name": "DTS-HD MA",
+      "pattern": "(?i)(?<![A-Z0-9])DTS[- .]?HD[- .]?(?:MA|MASTER[ ._-]?AUDIO)(?![A-Z0-9])",
+      "imageURL": "https://raw.githubusercontent.com/YOUR_GITHUB_USER/YOUR_REPO/main/assets/audio_dtshdma.svg",
+      "tagColor": "00000000",
+      "borderColor": "FFB84D"
+    },
+    {
+      "id": "cinema_truehd",
+      "groupId": "audio",
+      "name": "TRUEHD",
+      "pattern": "(?i)(?<![A-Z0-9])TRUEHD(?![A-Z0-9])",
+      "imageURL": "https://raw.githubusercontent.com/YOUR_GITHUB_USER/YOUR_REPO/main/assets/audio_truehd.svg",
+      "tagColor": "00000000",
+      "borderColor": "FFB84D"
+    },
+    {
+      "id": "cinema_ddplusatmos",
+      "groupId": "audio",
+      "name": "DD+ + ATMOS",
+      "pattern": "(?i)(?<![A-Z0-9])(?:DD\\+|E-?AC-?3)[ ._-]?ATMOS(?![A-Z0-9])",
+      "imageURL": "https://raw.githubusercontent.com/YOUR_GITHUB_USER/YOUR_REPO/main/assets/audio_ddplusatmos.svg",
+      "tagColor": "00000000",
+      "borderColor": "FFB84D"
+    },
+    {
+      "id": "cinema_dts",
+      "groupId": "audio",
+      "name": "DTS",
+      "pattern": "(?i)(?<![A-Z0-9])DTS(?![- ._]?(?:X|HD|ES))",
+      "imageURL": "https://raw.githubusercontent.com/YOUR_GITHUB_USER/YOUR_REPO/main/assets/audio_dts.svg",
+      "tagColor": "00000000",
+      "borderColor": "FFB84D"
+    },
+    {
+      "id": "cinema_ddplus",
+      "groupId": "audio",
+      "name": "DD+",
+      "pattern": "(?i)(?<![A-Z0-9])(?:DD\\+|E-?AC-?3)(?![A-Z0-9])",
+      "imageURL": "https://raw.githubusercontent.com/YOUR_GITHUB_USER/YOUR_REPO/main/assets/audio_ddplus.svg",
+      "tagColor": "00000000",
+      "borderColor": "FFB84D"
+    },
+    {
+      "id": "cinema_dd",
+      "groupId": "audio",
+      "name": "DD",
+      "pattern": "(?i)(?<![A-Z0-9])(?:DD|AC-?3|DOLBY[ ._-]?DIGITAL)(?![A-Z0-9+])",
+      "imageURL": "https://raw.githubusercontent.com/YOUR_GITHUB_USER/YOUR_REPO/main/assets/audio_dd.svg",
+      "tagColor": "00000000",
+      "borderColor": "FFB84D"
+    },
+    {
+      "id": "cinema_aac",
+      "groupId": "audio",
+      "name": "AAC",
+      "pattern": "(?i)(?<![A-Z0-9])AAC(?![A-Z0-9])",
+      "imageURL": "https://raw.githubusercontent.com/YOUR_GITHUB_USER/YOUR_REPO/main/assets/audio_aac.svg",
+      "tagColor": "00000000",
+      "borderColor": "FFB84D"
+    },
+    {
+      "id": "cinema_flac",
+      "groupId": "audio",
+      "name": "FLAC",
+      "pattern": "(?i)(?<![A-Z0-9])FLAC(?![A-Z0-9])",
+      "imageURL": "https://raw.githubusercontent.com/YOUR_GITHUB_USER/YOUR_REPO/main/assets/audio_flac.svg",
+      "tagColor": "00000000",
+      "borderColor": "FFB84D"
+    },
+    {
+      "id": "cinema_opus",
+      "groupId": "audio",
+      "name": "OPUS",
+      "pattern": "(?i)(?<![A-Z0-9])OPUS(?![A-Z0-9])",
+      "imageURL": "https://raw.githubusercontent.com/YOUR_GITHUB_USER/YOUR_REPO/main/assets/audio_opus.svg",
+      "tagColor": "00000000",
+      "borderColor": "FFB84D"
+    },
+    {
+      "id": "cinema_mp3",
+      "groupId": "audio",
+      "name": "MP3",
+      "pattern": "(?i)(?<![A-Z0-9])MP3(?![A-Z0-9])",
+      "imageURL": "https://raw.githubusercontent.com/YOUR_GITHUB_USER/YOUR_REPO/main/assets/audio_mp3.svg",
+      "tagColor": "00000000",
+      "borderColor": "FFB84D"
+    },
+    {
+      "id": "cinema_7_1",
+      "groupId": "channels",
+      "name": "7.1",
+      "pattern": "(?i)(?<![0-9])7[ ._-]?1(?:CH)?(?![0-9])",
+      "imageURL": "https://raw.githubusercontent.com/YOUR_GITHUB_USER/YOUR_REPO/main/assets/channels_7_1.svg",
+      "tagColor": "00000000",
+      "borderColor": "70A7FF"
+    },
+    {
+      "id": "cinema_6_1",
+      "groupId": "channels",
+      "name": "6.1",
+      "pattern": "(?i)(?<![0-9])6[ ._-]?1(?:CH)?(?![0-9])",
+      "imageURL": "https://raw.githubusercontent.com/YOUR_GITHUB_USER/YOUR_REPO/main/assets/channels_6_1.svg",
+      "tagColor": "00000000",
+      "borderColor": "70A7FF"
+    },
+    {
+      "id": "cinema_5_1",
+      "groupId": "channels",
+      "name": "5.1",
+      "pattern": "(?i)(?<![0-9])5[ ._-]?1(?:CH)?(?![0-9])",
+      "imageURL": "https://raw.githubusercontent.com/YOUR_GITHUB_USER/YOUR_REPO/main/assets/channels_5_1.svg",
+      "tagColor": "00000000",
+      "borderColor": "70A7FF"
+    },
+    {
+      "id": "cinema_2_0",
+      "groupId": "channels",
+      "name": "2.0",
+      "pattern": "(?i)(?<![0-9])2[ ._-]?0(?:CH)?(?![0-9])",
+      "imageURL": "https://raw.githubusercontent.com/YOUR_GITHUB_USER/YOUR_REPO/main/assets/channels_2_0.svg",
+      "tagColor": "00000000",
+      "borderColor": "70A7FF"
+    },
+    {
+      "id": "cinema_60fps",
+      "groupId": "frame",
+      "name": "60 FPS",
+      "pattern": "(?i)(?<![0-9])(?:59\\.94|60)(?:[ ._-]?FPS)?(?![0-9])",
+      "imageURL": "https://raw.githubusercontent.com/YOUR_GITHUB_USER/YOUR_REPO/main/assets/frame_60fps.svg",
+      "tagColor": "00000000",
+      "borderColor": "67E8F9"
+    },
+    {
+      "id": "cinema_50fps",
+      "groupId": "frame",
+      "name": "50 FPS",
+      "pattern": "(?i)(?<![0-9])(?:50)(?:[ ._-]?FPS)(?![0-9])",
+      "imageURL": "https://raw.githubusercontent.com/YOUR_GITHUB_USER/YOUR_REPO/main/assets/frame_50fps.svg",
+      "tagColor": "00000000",
+      "borderColor": "67E8F9"
+    },
+    {
+      "id": "cinema_30fps",
+      "groupId": "frame",
+      "name": "30 FPS",
+      "pattern": "(?i)(?<![0-9])(?:29\\.97|30)(?:[ ._-]?FPS)(?![0-9])",
+      "imageURL": "https://raw.githubusercontent.com/YOUR_GITHUB_USER/YOUR_REPO/main/assets/frame_30fps.svg",
+      "tagColor": "00000000",
+      "borderColor": "67E8F9"
+    },
+    {
+      "id": "cinema_25fps",
+      "groupId": "frame",
+      "name": "25 FPS",
+      "pattern": "(?i)(?<![0-9])25(?:[ ._-]?FPS)(?![0-9])",
+      "imageURL": "https://raw.githubusercontent.com/YOUR_GITHUB_USER/YOUR_REPO/main/assets/frame_25fps.svg",
+      "tagColor": "00000000",
+      "borderColor": "67E8F9"
+    },
+    {
+      "id": "cinema_24fps",
+      "groupId": "frame",
+      "name": "24 FPS",
+      "pattern": "(?i)(?<![0-9])(?:23\\.976|23\\.98|24)(?:[ ._-]?FPS)?(?![0-9])",
+      "imageURL": "https://raw.githubusercontent.com/YOUR_GITHUB_USER/YOUR_REPO/main/assets/frame_24fps.svg",
+      "tagColor": "00000000",
+      "borderColor": "67E8F9"
+    },
+    {
+      "id": "cinema_bitrate",
+      "groupId": "technical",
+      "name": "BITRATE",
+      "pattern": "(?i)(?<![A-Z0-9])(?:\\d+(?:\\.\\d+)?\\s?(?:K|M|G)?BPS)(?![A-Z0-9])",
+      "imageURL": "https://raw.githubusercontent.com/YOUR_GITHUB_USER/YOUR_REPO/main/assets/technical_bitrate.svg",
+      "tagColor": "00000000",
+      "borderColor": "7EE787"
+    },
+    {
+      "id": "cinema_filesize",
+      "groupId": "size",
+      "name": "FILE SIZE",
+      "pattern": "(?i)(?<![A-Z0-9])\\d+(?:\\.\\d+)?\\s?(?:TB|GB|MB)(?![A-Z0-9])",
+      "imageURL": "https://raw.githubusercontent.com/YOUR_GITHUB_USER/YOUR_REPO/main/assets/size_filesize.svg",
+      "tagColor": "00000000",
+      "borderColor": "D8A4FF"
+    },
+    {
+      "id": "cinema_mkv",
+      "groupId": "technical",
+      "name": "MKV",
+      "pattern": "(?i)(?<![A-Z0-9])MKV(?![A-Z0-9])",
+      "imageURL": "https://raw.githubusercontent.com/YOUR_GITHUB_USER/YOUR_REPO/main/assets/technical_mkv.svg",
+      "tagColor": "00000000",
+      "borderColor": "7EE787"
+    },
+    {
+      "id": "cinema_mp4",
+      "groupId": "technical",
+      "name": "MP4",
+      "pattern": "(?i)(?<![A-Z0-9])MP4(?![A-Z0-9])",
+      "imageURL": "https://raw.githubusercontent.com/YOUR_GITHUB_USER/YOUR_REPO/main/assets/technical_mp4.svg",
+      "tagColor": "00000000",
+      "borderColor": "7EE787"
+    },
+    {
+      "id": "cinema_m2ts",
+      "groupId": "technical",
+      "name": "M2TS",
+      "pattern": "(?i)(?<![A-Z0-9])M2TS(?![A-Z0-9])",
+      "imageURL": "https://raw.githubusercontent.com/YOUR_GITHUB_USER/YOUR_REPO/main/assets/technical_m2ts.svg",
+      "tagColor": "00000000",
+      "borderColor": "7EE787"
+    },
+    {
+      "id": "cinema_iso",
+      "groupId": "technical",
+      "name": "ISO",
+      "pattern": "(?i)(?<![A-Z0-9])ISO(?![A-Z0-9])",
+      "imageURL": "https://raw.githubusercontent.com/YOUR_GITHUB_USER/YOUR_REPO/main/assets/technical_iso.svg",
+      "tagColor": "00000000",
+      "borderColor": "7EE787"
+    },
+    {
+      "id": "cinema_3d",
+      "groupId": "technical",
+      "name": "3D",
+      "pattern": "(?i)(?<![A-Z0-9])3D(?![A-Z0-9])",
+      "imageURL": "https://raw.githubusercontent.com/YOUR_GITHUB_USER/YOUR_REPO/main/assets/special_3d.svg",
+      "tagColor": "00000000",
+      "borderColor": "7EE787"
+    }
+  ]
+}
