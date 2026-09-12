@@ -1,0 +1,37 @@
+/* 4K REMUX DV */ merge(
+  resolution(streams, '2160p'),
+  quality(streams, 'Bluray'),
+  visualTag(streams, 'DV')
+)
+
+/* 4K REMUX HDR */ merge(
+  resolution(streams, '2160p'),
+  quality(streams, 'Bluray'),
+  visualTag(streams, 'HDR')
+)
+
+/* 4K WEB-DL DV */ merge(
+  resolution(streams, '2160p'),
+  quality(streams, 'WEB-DL'),
+  visualTag(streams, 'DV')
+)
+
+/* 4K WEB-DL HDR */ merge(
+  resolution(streams, '2160p'),
+  quality(streams, 'WEB-DL'),
+  visualTag(streams, 'HDR')
+)
+
+/* 4K */ resolution(streams, '2160p')
+
+/* 1080p REMUX */ merge(
+  resolution(streams, '1080p'),
+  quality(streams, 'Bluray')
+)
+
+/* 1080p WEB-DL */ merge(
+  resolution(streams, '1080p'),
+  quality(streams, 'WEB-DL')
+)
+
+/* 1080p */ resolution(streams, '1080p')
